@@ -37,4 +37,4 @@ It combines plant disease detection from leaf images with localized weather insi
 
 ---
 
-## Project Structure
+
