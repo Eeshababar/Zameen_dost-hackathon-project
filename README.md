@@ -1,37 +1,40 @@
-# Crop Advisory : AI-Powered Plant Disease & Weather Assistant (Urdu)
+# Crop Advisory — AI-Powered Plant Disease & Weather Assistant (Urdu)
 
 ## Overview
-Crop Advisory is an AI-powered agricultural assistant designed for farmers, agronomists, and agricultural extension workers.  
-It combines real-time plant disease detection with localized weather insights in Urdu, enabling informed decision-making for crop health, irrigation, and pest prevention.
+Crop Advisory is an AI-powered agricultural assistant for farmers, agronomists, and agricultural extension workers.  
+It combines plant disease detection from leaf images with localized weather insights in Urdu to support decisions on crop health, irrigation, and pest prevention.
 
 **It provides:**
 - Real-time plant disease detection from leaf images
 - Current weather conditions in Urdu
 - Tomorrow’s weather forecast in Urdu
-- Voice input, crop prices advice and voice output
+- (Optional in your codebase) Urdu voice input with Whisper and Urdu TTS responses
 
 ---
 
 ## Key Features
-- **Plant Disease Detection** — Upload a plant leaf image and receive the detected disease name with a confidence score.
-- **Current Weather Updates (Urdu)** — Provides real-time temperature, humidity, and weather descriptions in Urdu.
-- **Tomorrow’s Weather Forecast (Urdu)** — Hourly breakdown of temperature and conditions for the next day.
-- **User-Friendly Interface** — Built with Gradio for accessibility on desktop and mobile devices.
-- **Multi-API Integration** — Combines Roboflow (disease detection) and OpenWeatherMap (weather data).
+- **Plant Disease Detection** — Uses Roboflow’s hosted model to identify diseases from leaf images with confidence scores.
+- **Current Weather (Urdu)** — Temperature, humidity, and conditions in Urdu via OpenWeatherMap.
+- **Tomorrow’s Forecast (Urdu)** — Midday forecast details for the next day.
+- **Simple Web UI** — Gradio-based interface that runs in a browser.
+- **Extensible** — Hooks for RAG/embeddings and Urdu voice features are present in code if you enable them.
 
 ---
 
 ## Tech Stack
 
-| Component          | Technology Used                              |
-|--------------------|----------------------------------------------|
-| Programming Language | Python                                      |
-| Frontend/UI        | Gradio                                       |
-| ML Model           | Roboflow Plant Disease Detection v2          |
-| Weather Data       | OpenWeatherMap API                           |
-| APIs & SDKs        | inference-sdk, requests                      |
-| Others             | datetime, json                               |
+| Component            | Technology |
+|---------------------|-----------|
+| Programming Language| Python |
+| UI                  | Gradio |
+| Disease Detection   | Roboflow Inference API (`inference-sdk`) |
+| Weather Data        | OpenWeatherMap API (`requests`) |
+| LLM (optional prompts) | Groq API (Llama 3 family) |
+| OCR/RAG (optional)  | Tesseract OCR, LangChain, FAISS, HuggingFace Embeddings |
+| Audio (optional)    | OpenAI Whisper (ASR), gTTS (Urdu TTS) |
+
+
 
 ---
 
-
+## Project Structure
