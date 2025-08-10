@@ -1,4 +1,4 @@
-# Crop Advisory — AI-Powered Plant Disease & Weather Assistant (Urdu)
+# Crop Advisory : AI-Powered Plant Disease & Weather Assistant (Urdu)
 
 ## Overview
 Crop Advisory is an AI-powered agricultural assistant designed for farmers, agronomists, and agricultural extension workers.  
