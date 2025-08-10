@@ -8,6 +8,7 @@ It combines real-time plant disease detection with localized weather insights in
 - Real-time plant disease detection from leaf images
 - Current weather conditions in Urdu
 - Tomorrow’s weather forecast in Urdu
+- Voice input, crop prices advice and voice output
 
 ---
 
