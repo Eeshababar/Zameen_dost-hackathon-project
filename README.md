@@ -1,5 +1,8 @@
 # Crop Advisory — AI-Powered Plant Disease & Weather Assistant (Urdu)
 
+![Uploading Smart Farming Assistant.jpg…]()
+
+
 ## Overview
 Crop Advisory is an AI-powered agricultural assistant for farmers, agronomists, and agricultural extension workers.  
 It combines plant disease detection from leaf images with localized weather insights in Urdu to support decisions on crop health, irrigation, and pest prevention.
