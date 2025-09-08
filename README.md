@@ -13,7 +13,7 @@ It combines plant disease detection from leaf images with localized weather insi
 ---
 
 ## Key Features
-- **Plant Disease Detection** — Uses Roboflow’s hosted model to identify diseases from leaf images with confidence scores.
+- **Plant Disease Detection** — Uses CNN, VGG-16, DENSET121, RESNET50 and Roboflow’s hosted model to identify diseases from leaf images with confidence scores.
 - **Current Weather (Urdu)** — Temperature, humidity, and conditions in Urdu via OpenWeatherMap.
 - **Tomorrow’s Forecast (Urdu)** — Midday forecast details for the next day.
 - **Simple Web UI** — Gradio-based interface that runs in a browser.
@@ -27,7 +27,7 @@ It combines plant disease detection from leaf images with localized weather insi
 |---------------------|-----------|
 | Programming Language| Python |
 | UI                  | Gradio |
-| Disease Detection   | Roboflow Inference API (`inference-sdk`) |
+| Disease Detection   | CNN, VGG-16, DENSENET121, RESNET50, Roboflow Inference API (`inference-sdk`) |
 | Weather Data        | OpenWeatherMap API (`requests`) |
 | LLM (optional prompts) | Groq API (Llama 3 family) |
 | OCR/RAG (optional)  | Tesseract OCR, LangChain, FAISS, HuggingFace Embeddings |
